@@ -20,6 +20,10 @@
 
     helm repo index --url https://mattiaperi.github.io/helm-chart/ .
 
+### Update Repo Index with New Charts
+
+    helm repo index --url https://mattiaperi.github.io/helm-chart/ --merge index.yaml .
+
 ### Add This Repo to Your Local Helm Repo Cache
 
     helm repo add ac-bp-helm-charts https://acutchin-bitpusher.github.io/helm-charts/
