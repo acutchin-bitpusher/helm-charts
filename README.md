@@ -18,16 +18,25 @@
 
 ### Create/Update Repo Index (index.yaml)
 
-    helm repo index --url https://acutchin-bitpusher.github.io/helm-charts/ .
+    helm repo index --url `cat repo.url` .
 
 ### Update Repo Index with New Charts
 
-    helm repo index --url https://acutchin-bitpusher.github.io/helm-charts/ --merge index.yaml .
+    helm repo index --url `cat repo.url` --merge index.yaml .
 
 ### Add This Repo to Your Local Helm Repo Cache
 
-    helm repo add ac-bp-helm-charts https://acutchin-bitpusher.github.io/helm-charts/
+    helm repo add ac-bp-helm-charts `cat repo.url`
 
 ### Search Local Helm Repo Cache for "test" Chart
 
     helm search repo test
+
+### Handy multi-command command lines
+
+    helm lint helm-chart-sources/* && helm package helm-chart-sources/* && helm repo index --url `cat repo.url` .
+
+    git add -A && git commit -m 'test helm chart update' && git push
+
+    helm repo update && helm search repo ac-bp-helm-charts
+
