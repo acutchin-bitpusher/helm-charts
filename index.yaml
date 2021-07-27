@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
+  full-helm-test:
+  - apiVersion: v2
+    appVersion: 0.0.30
+    created: "2021-07-27T14:53:47.618725-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 9c61bf71fedc061aa98b67b284638cbc5caf088ffa64a9e17c2442e4458df90b
+    name: full-helm-test
+    type: application
+    urls:
+    - https://mattiaperi.github.io/helm-chart/full-helm-test-0.0.1.tgz
+    version: 0.0.1
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T12:44:09.0786-07:00"
+    created: "2021-07-27T14:53:47.619146-07:00"
     description: A Helm chart for Kubernetes
-    digest: ebb66c2a38052c8c2687be868fbb150282ba513faf8c99348fafdf680dbbd22c
+    digest: ab2fce2051996131b19afa5ee0d52d3eed82090924d5d68f2e728ac09c3ebbf6
     name: helm-chart-test
     type: application
     urls:
     - https://mattiaperi.github.io/helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-27T12:44:09.078022-07:00"
+generated: "2021-07-27T14:53:47.617989-07:00"
