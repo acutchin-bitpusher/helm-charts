@@ -23,3 +23,11 @@
 ### Add This Repo to Your Local Helm Repo Cache
 
     helm repo add ac-bp-helm-charts https://acutchin-bitpusher.github.io/helm-charts/
+
+### Searchn Local Helm Repo Cache for "test" Chart
+
+```
+[you@your-laptop] helm search repo test
+NAME                             	CHART VERSION	APP VERSION	DESCRIPTION
+ac-bp-helm-charts/helm-chart-test	0.1.0        	1.16.0     	A Helm chart for Kubernetes
+```
