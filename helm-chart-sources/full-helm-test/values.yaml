@@ -41,8 +41,15 @@ service:
   port: 80
 
 ingress:
-#  certARN: ""
-#  lbDNShostname: ""
+  certARN: ""
+  lbDNShostname: ""
+
+##  DB ENV VARS
+db:
+  engine: "dummy-db-engine-value"
+  port: 3306
+  hostname: "dummy-db-hostname-value"
+  name: "dummy-db-name-value"
 
 resources:
   limits:
