@@ -3,33 +3,33 @@ entries:
   full-helm-test:
   - apiVersion: v2
     appVersion: 0.0.30
-    created: "2021-07-27T15:23:54.347719-07:00"
+    created: "2021-07-27T15:26:02.36772-07:00"
     description: A Helm chart for Kubernetes
     digest: 39a04b6815663a77f6ebba3da2da9bee45e640804c8ab02ac4d4d9364802c7d8
     name: full-helm-test
     type: application
     urls:
-    - https://mattiaperi.github.io/helm-chart/full-helm-test-1.0.0.tgz
+    - https://acutchin-bitpusher.github.io/helm-charts/full-helm-test-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.0.30
-    created: "2021-07-27T15:23:54.346868-07:00"
+    created: "2021-07-27T15:26:02.367314-07:00"
     description: A Helm chart for Kubernetes
     digest: 9c61bf71fedc061aa98b67b284638cbc5caf088ffa64a9e17c2442e4458df90b
     name: full-helm-test
     type: application
     urls:
-    - https://mattiaperi.github.io/helm-chart/full-helm-test-0.0.1.tgz
+    - https://acutchin-bitpusher.github.io/helm-charts/full-helm-test-0.0.1.tgz
     version: 0.0.1
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T15:23:54.348639-07:00"
+    created: "2021-07-27T15:26:02.368171-07:00"
     description: A Helm chart for Kubernetes
     digest: 4c5cbaa0c4386c73cc9aea0649275d51d0e8ccfbfcf819dd75413d47660c216a
     name: helm-chart-test
     type: application
     urls:
-    - https://mattiaperi.github.io/helm-chart/helm-chart-test-0.1.0.tgz
+    - https://acutchin-bitpusher.github.io/helm-charts/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-27T15:23:54.345754-07:00"
+generated: "2021-07-27T15:26:02.366716-07:00"
