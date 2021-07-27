@@ -24,6 +24,6 @@
 
     helm repo add ac-bp-helm-charts https://acutchin-bitpusher.github.io/helm-charts/
 
-### Searchn Local Helm Repo Cache for "test" Chart
+### Search Local Helm Repo Cache for "test" Chart
 
     helm search repo test
