@@ -36,13 +36,13 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy | default "Always" }}
           env:
             - name: "DB_ENGINE"
-              value: {{ .Values.db.engine }}
+              value: {{ .Values.db.engine | default "dummy-db-engine-value" }}
             - name: "DB_PORT"
-              value: {{ .Values.db.port | quote }}
+              value: {{ .Values.db.port | default 3306 | quote }}
             - name: "DB_HOSTNAME"
-              value: {{ .Values.db.hostname }}
+              value: {{ .Values.db.hostname | default "dummy-db-hostname-value" }}
             - name: "DB_NAME"
-              value: {{ .Values.db.name }}
+              value: {{ .Values.db.name | default "dummy-db-name-value" }}
           ports:
             - name: http
               containerPort: 80
