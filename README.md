@@ -2,31 +2,52 @@
 
 * Based on [this tutorial](https://medium.com/@mattiaperi/create-a-public-helm-chart-repository-with-github-pages-49b180dbb417)
 
-##  Procedures
+##  Procedure
 
-### Create New Helm Chart from Template
+1. Create or Modify Helm Chart
 
-    helm create helm-chart-sources/<chart_name>
+  * New Chart from Template
 
-### Lint All Charts
+      helm create helm-chart-sources/<chart_name>
+
+  * Or modify existing chart under helm-chart-sources/
+
+    * NOTE: When modifying a Helm chart, remember to increment version: in Chart.yaml
+
+1. Lint All Charts
 
     helm lint helm-chart-sources/*
 
-### Package All Charts
+1. Package All Charts
 
     helm package helm-chart-sources/*
 
-### Create/Update Repo Index (index.yaml)
+1. Create/Update Repo Index (index.yaml)
 
     helm repo index --url `cat repo.url` .
 
-### Update Repo Index with New Charts
+1. Update Repo Index with New Charts
 
     helm repo index --url `cat repo.url` --merge index.yaml .
 
-### Add This Repo to Your Local Helm Repo Cache
+1. Add This Repo to Your Local Helm Repo Cache
 
     helm repo add ac-bp-helm-charts `cat repo.url`
+
+1. Git add/commit/push
+
+1. Configure local Helm Repo Cache
+
+  1. Add helm repo (if necessary)
+
+      helm repo add ac-bp-helm-charts https://acutchin-bitpusher.github.io/helm-charts/
+
+  1. Update helm repo (such as after updating a chart version)
+
+      helm repo update && helm search repo ac-bp-helm-charts
+
+      * NOTE: You will likely have to repeat the above command for a few minutes until the most recent chart versions are cached locally
+
 
 ### Search Local Helm Repo Cache for "test" Chart
 
