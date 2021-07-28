@@ -45,7 +45,7 @@
 
             helm repo update && helm search repo ac-bp-helm-charts
 
-      * NOTE: You will likely have to repeat the above command for a few minutes until the most recent chart versions are cached locally
+      * NOTE: You will likely have to repeat the above command for a few minutes until the most recent chart versions are cached locally. GitHub Pages is CDN-cached and can take up to 10 minutes to refresh!
 
 
 ### Search Local Helm Repo Cache for "test" Chart
