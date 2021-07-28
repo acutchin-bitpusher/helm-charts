@@ -60,3 +60,12 @@
 
     helm repo update && helm search repo ac-bp-helm-charts
 
+
+## Deploy/Install Release
+
+helm install --set image.repository="acutchinbitpusher/actest" --set ingress.certARN="arn:aws:acm:us-west-2:333356559612:certificate/e4d68480-d60f-4146-a73b-00d89ba5b4d0" --set ingress.lbDNShostname="acfulltest1.dev13.built-bp-dev.com" acfulltest1 ac-bp-helm-charts/full-helm-test
+
+helm upgrade acfulltest1 ac-bp-helm-charts/full-helm-test
+
+helm uninstall acfulltest1
+
