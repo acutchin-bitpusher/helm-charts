@@ -46,7 +46,7 @@ ingress:
 
 ##  DB ENV VARS
 db:
-  engine: "dummy-db-engine-value-zoo"
+  engine: "dummy-db-engine-value-roo"
   port: 3306
   hostname: "dummy-db-hostname-value"
   name: "dummy-db-name-value"
